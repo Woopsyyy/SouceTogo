@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration Form</title>
+    <link rel="stylesheet" href="login1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+<nav class="navbar section-content">
+<div class="nav-logo">
+    <a href="saucetogo.html" class="logo-text"><img src="D:\xamp\htdocs\test\saucetogo\source\saucetogologo.png" class="logo-img"></a>
+</div>
+    <ul class="nav-menu">
+        <button id="menu-close-button" class="fas fa-times"></button>
+        <li class="nav-item">
+            <a href="saucetogo.html" class="nav-link">HOME</a>
+        </li>
+        <li class="nav-item">
+            <a href="saucetogo.html#menu" class="nav-link">MENU</a>
+        </li>
+        <li class="nav-item">
+            <a href="saucetogo.html#about" class="nav-link">ABOUT</a>
+        </li>
+        <li class="nav-item">
+            <a href="saucetogo.html#contact" class="nav-link">CONTACT US</a>
+        </li>
+    </ul>
+       <button id="menu-open-button" class="fas fa-bars"></button>
+</nav>
+
+    </header>
+    <div class="section">
+        <!-- Login Form Section -->
+        <div class="form-box login">
+            <form action="#">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="register-link">
+                    <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+
+        <!-- Registration Form Section -->
+        <div class="form-box register">
+            <form action="#">
+                <h1>Registration</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" required>
+                    <i class='bx bxs-envelope' ></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-link">
+                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="loginja.js"></script>
+</body>
+</html>
