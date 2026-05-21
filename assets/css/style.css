@@ -161,6 +161,17 @@ header .navbar {
     display: none;
     font-size: var(--font-size-l);
     color: var(--dark-color);
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.navbar #menu-open-button:hover, 
+.navbar #menu-close-button:hover {
+    color: var(--primary-color);
+    transform: scale(1.15);
 }
 
 /* Dynamic counter badge */
@@ -1064,6 +1075,7 @@ textarea.form-control {
         width: 100%;
         backdrop-filter: blur(5px);
         background: rgba(0,0,0,0.3);
+        z-index: 1000;
     }
 
     .navbar #menu-open-button {
@@ -1075,6 +1087,7 @@ textarea.form-control {
         position: absolute;
         right: 30px;
         top: 30px;
+        z-index: 1002;
     }
 
     .navbar .nav-menu {
@@ -1090,6 +1103,7 @@ textarea.form-control {
         background: var(--white-color);
         transition: 0.3s ease;
         box-shadow: 5px 0 15px rgba(0,0,0,0.2);
+        z-index: 1001;
     }
 
     body.show-mobile-menu .navbar .nav-menu {

@@ -82,7 +82,9 @@ CREATE TABLE IF NOT EXISTS `contact_messages` (
 -- --------------------------------------------------------
 -- Seed Initial Products (Dynamic Catalog)
 -- --------------------------------------------------------
+SET FOREIGN_KEY_CHECKS = 0;
 TRUNCATE TABLE `products`;
+SET FOREIGN_KEY_CHECKS = 1;
 
 -- Spicy Sauces
 INSERT INTO `products` (`name`, `description`, `price`, `image`, `category`) VALUES
