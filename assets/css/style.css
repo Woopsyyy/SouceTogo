@@ -870,32 +870,43 @@ header .navbar {
     gap: 20px;
 }
 
-.cart-actions .btn-secondary {
+.btn-secondary {
+    display: inline-block;
+    text-align: center;
     padding: 12px 30px;
     border-radius: 25px;
     border: 2px solid var(--white-color);
     color: var(--white-color);
     font-size: 1.2rem;
-    transition: 0.3s;
+    font-weight: bold;
+    transition: 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.cart-actions .btn-secondary:hover {
+.btn-secondary:hover {
     background: var(--white-color);
     color: var(--primary-color);
+    box-shadow: 0 4px 15px rgba(255,255,255,0.2);
 }
 
-.cart-actions .btn-primary {
+.btn-primary {
+    display: inline-block;
+    text-align: center;
     padding: 12px 40px;
     border-radius: 25px;
     background: var(--secondary-color);
     color: var(--primary-color);
     font-size: 1.2rem;
     font-weight: bold;
+    border: none;
     box-shadow: 0 4px 15px rgba(243, 150, 28, 0.4);
-    transition: 0.3s;
+    transition: 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.cart-actions .btn-primary:hover {
+.btn-primary:hover {
     background: var(--white-color);
     color: var(--primary-color);
     box-shadow: 0 4px 15px rgba(255,255,255,0.3);

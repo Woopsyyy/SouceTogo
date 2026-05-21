@@ -53,7 +53,7 @@ while ($row = mysqli_fetch_assoc($cart_result)) {
                 
                 <div style="margin-top: 30px;">
                     <p style="font-size: 0.85rem; color: #ccc; margin-bottom: 15px;">* Payments are processed via Cash on Delivery (COD) only.</p>
-                    <button type="submit" class="btn-primary" style="width: 100%; border: none; font-family:'Bebas Neue',sans-serif; font-size: 1.4rem; cursor: pointer;">Place Order (Cash On Delivery)</button>
+                    <button type="submit" class="btn-primary" style="width: 100%; border: none; font-family:'Bebas Neue',sans-serif; font-size: 1.4rem; cursor: pointer; background: var(--secondary-color); color: var(--primary-color); padding: 12px 20px; border-radius: 25px; font-weight: bold; box-shadow: 0 4px 15px rgba(243, 150, 28, 0.4); transition: 0.3s ease;">Place Order (Cash On Delivery)</button>
                 </div>
             </form>
         </div>
